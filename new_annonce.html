@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Déposer une annonce</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	
+</head>
+<body>
+<div class="container">
+	<header class="row" id="en-tete">
+		<div class="col-lg-12">
+			<div id="logo">
+				<img src="images/mon_logo.png" alt="PartageMonContainer">
+			</div>
+			<ul class="nav nav-pills justify-content-end" id="menu">
+				<li class="nav-item"><a href="index.html" class="nav-link">Accueil</a></li>
+				<li class="nav-item"><a href="new_annonce.html" class="nav-link active">Déposer une annonce</a></li>
+				<li class="nav-item"><a href="#" class="nav-link">Voir les offres</a></li>
+				<li class="nav-item"><a href="page_connexion.html" class="nav-link">Connexion</a></li>
+			</ul>
+		</div>
+	</header>
+	<div id="body" class="well row">
+		<form class="col-lg-10 offset-lg-1">
+			<fieldset>
+				<legend>Vous êtes</legend>
+				<div class="row button_radio">
+					<div class="form-check form-check-inline">
+						<input class="form-check-input" type="radio" name="annonceur" id="particulier" required>
+						<label class="form-check-label" for="particulier">Un particulier</label>
+					</div>
+					<div class="form-check form-check-inline">
+						<input class="form-check-input" type="radio" name="annonceur" id="entreprise" required>
+						<label class="form-check-label" for="entreprise">Un entreprise</label>
+					</div>
+				</div>
+			</fieldset>
+			<fieldset>
+				<legend>Annonce</legend>
+				<div class="row button_radio">
+					<div class="form-check form-check-inline">
+						<input class="form-check-input" type="radio" name="nb_pieds" id="dix" required>
+						<label class="form-check-label" for="dix">10 pieds</label>
+					</div>
+					<div class="form-check form-check-inline radio">
+						<input class="form-check-input" type="radio" name="nb_pieds" id="vingt" required>
+						<label class="form-check-label" for="vingt">20 pieds</label>
+					</div>
+					<div class="form-check form-check-inline radio">
+						<input class="form-check-input" type="radio" name="nb_pieds" id="quarante" required>
+						<label class="form-check-label" for="quarante">40 pieds</label>
+					</div>
+					<div class="form-check form-check-inline radio">
+						<input class="form-check-input" type="radio" name="nb_pieds" id="autre" required>
+						<label class="form-check-label" for="quarante">Autre</label>
+					</div>
+					<input type="text" name="autrePieds" id="autrePieds" class="form-control col-lg-3"/>
+				</div>
+				<div class="form-group row">
+					<label class="col-lg-3 col-form-label" for="villeD">Ville de départ <span>*</span></label>
+					<div class="col-lg-3">
+						<input type="text" name="villeD" id="villeD" class="form-control" required>
+					</div>
+				</div>
+				<div class="form-group row">
+					<label class="col-lg-3 col-form-label" for="villeA">Ville d'arrivée <span>*</span></label>
+					<div class="col-lg-3">	
+						<input type="text" name="villeA" id="villeA" class="form-control" required>
+					</div>
+				</div>
+				<div class="form-group row">
+					<label for="dateD" class="col-lg-3">Date de départ prévue</label>
+					<div class="col-lg-3">
+						<input type="date" name="dateD" id="dateD" class="form-control" required>
+					</div>
+				</div>
+				
+				<div class="form-group row">
+					<label class="col-lg-3" for="dateA">Date d'arrivée prévue</label>
+					<div class="col-lg-3">
+						<input type="date" name="dateA" id="dateA" class="form-control" required title="Ajouter la date d'arrivée prévue">
+					</div>
+				</div>
+			</fieldset>
+			<fieldset>
+				<legend>Informations entreprise</legend>
+				<div class="form-group row">
+					<label for="nom_entreprise" class="col-lg-3 col-form-label">Nom de l'entreprise <span>*</span></label>
+					<div class="col-lg-4">
+						<input type="text" name="nom_entreprise" id="nom_entreprise" class="form-control" required>
+					</div>
+				</div>
+				<div class="form-group row">
+					<label for="raison_sociale" class="col-lg-3 col-form-label">Raison sociale <span>*</span></label>
+					<div class="col-lg-4">
+						<input type="text" name="raison_sociale" id="raison_sociale" class="form-control">
+					</div>
+				</div>
+			</fieldset>
+			<fieldset>
+				<legend>Informations personnelles</legend>
+				<div class="form-group row">
+					<label class="col-lg-3" for="nom">Nom <span>*</span></label>
+					<div class="col-lg-4">
+						<input type="text" name="nom" id="nom" class="form-control" required>
+					</div>
+				</div>
+				<div class="form-group row">
+					<label class="col-lg-3" for="prenom">Prénom <span>*</span></label>
+					<div class="col-lg-4">
+						<input type="text" name="prenom" id="prenom" class="form-control" required>
+					</div>
+				</div>
+				<div class="form-group row">
+					<label class="col-lg-3" for="email">Email <span>*</span></label>
+					<div class="col-lg-4">
+						<input type="email" name="email" id="email" class="form-control" required>
+					</div>
+				</div>
+				<div class="form-group row">
+					<label class="col-lg-3" for="mobile">Téléphone <span>*</span></label> 
+					<div class="col-lg-4">
+						<input type="tel" name="mobile" id="mobile" class="form-control" required>
+					</div>
+				</div>
+			</fieldset>
+			<fieldset>
+				<legend>Informations complémentaire</legend>
+				<div class="form-group row">
+					<label class="col-lg-3">Commentaire</label>
+					<textarea maxlength="1000" class="form-control"></textarea>
+				</div>
+			</fieldset>
+			<input type="submit" name="save" id="submit" value="Déposer l'annonce" class="btn btn-success bouton">
+			<input type="reset" name="annuler" id="reset" value="Annuler" class="btn btn-danger bouton">
+		</form>
+	</div>
+</div>
+</body>
+</html>

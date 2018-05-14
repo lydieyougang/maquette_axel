@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>PartageMonContainer</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<!-- Les scripts -->
+	<script type="text/javascript" src="jquery-3.3.1.js"></script>
+	<script defer src="fontawesome-free-5.0.13/svg-with-js/js/fontawesome-all.js"></script>
+</head>
+<body>
+<div class="container">
+		<header class="row" id="en-tete">
+		<div class="col-sm-12">
+			<div id="logo">
+				<img src="images/mon_logo.png" alt="PartageMonContainer">
+			</div>
+			<ul class="nav nav-pills justify-content-end" id="menu">
+				<li class="nav-item"><a href="#" class="nav-link active">Accueil</a></li>
+				<li class="nav-item"><a href="new_annonce.html" class="nav-link">Déposer une annonce</a></li>
+				<li class="nav-item"><a href="#" class="nav-link">Voir les offres</a></li>
+				<li class="nav-item"><a href="page_connexion.html" class="nav-link">Connexion</a></li>
+			</ul>
+		</div>
+	</header>
+	<div class="well row">
+		<form class="row">
+		<aside class="profil col-md-4 offset-md-1">
+			<div class="profil">
+				<img src="images/user.png">
+				<input type="file" id="photoProfil" name="photoProfil" accept=".jpg, .jpeg, .png" class="form-control-file">
+			</div>
+		</aside>
+		<section id="parametre" class="col-md-7">
+				<fieldset>
+					<div class="form-group row">
+						<label class="col-form-label col-md-3" for="userNom">Votre nom</label>
+						<input type="text" class="form-control col-md-8" value="Martin" name="userNom" id="userNom">
+					</div> 
+					<div class="form-group row">
+						<label class="col-form-label col-md-3" for="userPrenom">Votre prénom</label>
+						<input type="text" class="form-control col-md-8" value="Jean-Jacques" name="userPrenom" id="userPrenom">
+					</div> 
+					<div class="form-group row">
+						<label class="col-form-label col-md-3" for="userContact">Votre contact</label>
+						<input type="tel" class="form-control col-md-8" value="(+33) 6 95 23 67 23" name="userContact" id="userContact">
+					</div> 
+				</fieldset>
+				<fieldset>
+					<div class="form-group row">
+						<label class="col-form-label col-md-3" for="userEmail">Votre email</label>
+						<input type="text" class="form-control col-md-8" value="test@gmail.com" name="userEmail" id="userEmail">
+					</div>
+					<div class="form-group row">
+						<label class="form-form-label col-md-3" for="userMDP">Votre mot de passe</label>
+						<input type="password" class="form-control col-md-8" value="userPassword" name="userMDP" id="userMDP">
+					</div>
+				</fieldset>
+				<fieldset>
+					<p class="h4">Changez de mot de passe</p>
+					<div class="form-group row">
+						<label class="form-form-label col-md-4" for="userMDP_ancien">Ancien mot de passe</label>
+						<input type="password" class="form-control col-md-8" name="userMDP_ancien" id="userMDP_ancien">
+					</div>
+					<div class="form-group row">
+						<label class="form-form-label col-md-4" for="userMDP_nouveaux">Nouveau mot de passe</label>
+						<input type="password" class="form-control col-md-8" name="userMDP_N" id="userMDP_nouveaux">
+					</div>
+					<div class="form-group row">
+						<label class="form-form-label col-md-4" for="userMDP_nouveaux_again">Confirmez mot de passe</label>
+						<input type="password" class="form-control col-md-8" name="userMDP_N_A" id="userMDP_nouveaux_again">
+					</div>
+					<input type="submit" class="btn btn-info" value="Valider"> 
+				</fieldset>
+			</section>
+		</form>
+	</div>
+</div>
+</body>
+</html>

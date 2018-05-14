@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>PartageMonContainer - s'inscrire</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+<div class="container">
+	<header class="row" id="en-tete">
+		<div class="col-sm-12">
+			<div id="logo">
+				<img src="images/mon_logo.png" alt="PartageMonContainer">
+			</div>
+			<ul class="nav nav-pills justify-content-end" id="menu">
+				<li class="nav-item"><a href="index.html" class="nav-link">Accueil</a></li>
+				<li class="nav-item"><a href="new_annonce.html" class="nav-link disabled">Déposer une annonce</a></li>
+				<li class="nav-item"><a href="#" class="nav-link">Voir les offres</a></li>
+				<li class="nav-item"><a href="page_connexion.html" class="nav-link">Connexion</a></li>
+			</ul>
+		</div>
+	</header>
+	<div id="body" class="well row">
+		<form class="col-md-10 col-md-offset-1">
+			<fieldset>
+				<legend>Qui êtes vous?</legend>
+				<div class="row button_radio">
+					<div class="form-check form-check-inline">
+						<input type="radio" name="role" id="particulier" class="form-check-input" required> 
+						<label for="particulier" class="form-check-label"> Un particulier</label>
+					</div>
+					<div class="form-check form-check-inline">
+						<input type="radio" name="role" id="entreprise" class="form-check-input" required> 
+						<label for="entreprise" class="form-check-label"> Une entreprise</label>
+					</div>
+				</div>
+			</fieldset>
+			<fieldset>
+				<legend>Informations sur le compte</legend>
+					<div class="form-group row">
+					<label for="email" class="col-md-3 col-form-label">Email <span>*</span></label>
+					<div class="col-md-4">
+						<input type="email" name="email" id="email" class="form-control" placeholder="exemple@email.com" required>
+					</div>
+				</div>
+				<div class="form-group row">
+					<label class="col-md-3 col-form-label">Login</label>
+					<div class="col-md-4">
+						<input type="text" name="userLogin" id="userLogin" class="form-control" placeholder="mon login">
+					</div>
+				</diV>
+				<div class="form-group row">
+					<label for="password" class="col-md-3 col-form-label">Nouveau mot de passe <span>*</span></label>
+					<div class="col-md-4">
+						<input type="password" name="password" id="password" class="form-control" placeholder="**********" min="8" required>
+					</div>
+				</div>
+				<div class="form-group row">
+					<label for="password_bis" class="col-md-3 col-form-label">Confirmez le nouveau mot de passe <span>*</span></label>
+					<div class="col-md-4">
+						<input type="password" name="password_bis" id="password_bis" class="form-control" placeholder="**********" min="8" required>
+					</div>
+				</div>
+			</fieldset>
+			<fieldset id="company">
+				<legend>Informations sur l'entreprise</legend>
+				<div class="form-group row">
+					<label for="nom_entreprise" class="col-md-3 col-form-label">Nom de l'entreprise <span>*</span></label>
+					<div class="col-md-4">
+						<input type="text" name="nom_entreprise" id="nom_entreprise" class="form-control" required>
+					</div>
+				</div>
+				<div class="form-group row">
+					<label for="raison_sociale" class="col-md-3 col-form-label">Raison sociale <span>*</span></label>
+					<div class="col-md-4">
+						<input type="text" name="raison_sociale" id="raison_sociale" class="form-control" required>
+					</div>
+				</div>
+				<div class="form-group row">
+					<label for="secteur_activite" class="col-md-3 col-form-label">Secteur d'activité <span>*</span></label>
+					<div class="col-md-4">
+						<input type="text" name="secteur_activite" id="secteur_activite" class="form-control" required>
+					</div>
+				</div>
+				<div class="form-group row">
+					<label for="contact_entreprise" class="col-md-3 col-form-label">Téléphone fixe </label>
+					<div class="col-md-4">
+						<input type="tel" name="contact_entreprise" id="contact_entreprise" class="form-control">
+					</div>
+				</div>
+				<div class="form-group row">
+					<label for="adresse_entreprise" class="col-md-3 col-form-label">Adresse </label>
+					<div class="col-md-4">
+						<input type="text" name="adresse_entreprise" id="adresse_entreprise" class="form-control">
+					</div>
+				</div>
+				<div class="form-group row">
+					<label for="bp_entreprise" class="col-md-3 col-form-label">Code postale </label>
+					<div class="col-md-4">
+						<input type="text" name="bp_entreprise" id="bp_entreprise" class="form-control">
+					</div>
+				</div>
+				<div class="form-group row">
+					<label for="ville_entreprise" class="col-md-3 col-form-label">Ville </label>
+					<div class="col-md-4">
+						<input type="text" name="ville_entreprise" id="ville_entreprise" class="form-control">
+					</div>
+				</div>
+				<div class="form-group row">
+					<label for="pays_entreprise" class="col-md-3 col-form-label">Pays </label>
+					<div class="col-md-4">
+						<input type="text" name="pays_entreprise" id="pays_entreprise" class="form-control">
+					</div>
+				</div>
+				<div class="from-group row">
+					<label for="logo_entreprise" class="col-md-3 col-form-label">Logo de l'entreprise </label>
+					<div class="col-md-4">
+						<input type="file" name="logo_entreprise" id="logo_entreprise" class="form-control-life">
+					</div>
+				</div>
+			</fieldset>
+			<fieldset>
+				<legend>Informations personnelles</legend>
+				<div class="row button_radio">
+					<div class="form-check form-check-inline">
+						<input class="form-check-input" type="radio" name="civivlite" id="monsieur" value="monsieur" required/> 
+						<label class="form-check-label" for="civivlite">M</label>
+					</div>
+					<div class="form-check form-check-inline">
+						<input class="form-check-input" type="radio" name="civivlite" id="madame" value="madame" required/> 
+						<label class="form-check-label" for="civivlite">Mme</label>
+					</div>
+					<div class="form-check form-check-inline">
+						<input class="form-check-input" type="radio" name="civivlite" id="mademoiselle" value="mademoiselle" required/> 
+						<label class="form-check-label" for="civilite">Mlle</label>
+					</div>
+				</div>
+				<div class="form-group row">
+					<label for="nom" class="col-md-3 col-form-label">Nom <span>*</span></label>
+					<div class="col-md-4">
+						<input type="text" name="nom" id="nom" class="form-control" required>
+					</div>
+				</div>
+				<div class="form-group row">
+					<label for="prenom" class="col-md-3 col-form-label">Prénom <span>*</span></label>
+					<div class="col-md-4">
+						<input type="text" name="prenom" id="prenom" class="form-control" required>
+					</div>
+				</div>
+			
+				<div class="form-group row">
+					<label for="mobile" class="col-md-3 col-form-label">Téléphone mobile </label>
+					<div class="col-md-4">
+						<input type="tel" name="mobile" id="mobile" class="form-control">
+					</div>
+				</div>
+				<div class="form-group row">
+					<label for="pays_residence" class="col-md-3 col-form-label">Pays de résidence </label>
+					<div class="col-md-4">
+						<input type="text" name="pays_residence" id="pays_residence" class="form-control">
+					</div>
+				</div>
+				<div class="form-group row">
+					<label for="ville_residence" class="col-md-3 col-form-label">Ville de résidence </label>
+					<div class="col-md-4">
+						<input type="text" name="ville_residence" id="ville_residence" class="form-control">
+					</div>
+				</div>
+			</fieldset>
+			<div class="form-check">
+				<label class="form-check-label">
+					<input type="checkbox" name="accepter" id="accepter" class="form-check-input" required> 
+					Vous acceptez <a href="#">les conditions d'utilisations</a> de ce site
+				</label>
+			</div>
+			<input type="submit" name="save" value="Enregistrer" class="btn btn-success bouton"/>
+			<input type="reset" name="reset" value="Effacer" class="btn btn-danger bouton"/>
+		</form>
+	</div>
+</div>
+</body>
+</html>

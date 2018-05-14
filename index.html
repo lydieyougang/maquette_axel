@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>PartageMonContainer</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<!-- Les scripts -->
+	<script type="text/javascript" src="jquery-3.3.1.js"></script>
+	<script defer src="fontawesome-free-5.0.13/svg-with-js/js/fontawesome-all.js"></script>
+</head>
+<body>
+<div class="container">
+		<header class="row" id="en-tete">
+		<div class="col-sm-12">
+			<div id="logo">
+				<img src="images/mon_logo.png" alt="PartageMonContainer">
+			</div>
+			<ul class="nav nav-pills justify-content-end" id="menu">
+				<li class="nav-item"><a href="#" class="nav-link active"><i class="fas fa-home fa-lg"></i></a></li>
+				<li class="nav-item"><a href="new_annonce.html" class="nav-link">Déposer une annonce</a></li>
+				<li class="nav-item"><a href="#" class="nav-link">Voir les offres</a></li>
+				<li class="nav-item"><a href="page_connexion.html" class="nav-link">Connexion</a></li>
+			</ul>
+		</div>
+	</header>
+	<div class="well row">
+		<aside id="filtre" class="col-lg-3 col-sm-12">
+			<form class="col-lg-10">
+				<div>
+					<label for="villeD" class="col-form-label">Départ</label>
+					<input type="text" name="villeD" id="villeD" placeholder="Ville de départ" class="form-control"/>
+				</div>
+				<div>
+					<label for="villeA" class="col-form-label">Arrivée</label>
+					<input type="text" name="villeA" id="villeA" placeholder="Ville d'arrivée" class="form-control"/>
+				</div>
+				<div>
+					<label class="col-form-label"></label>
+					<select class="form-control" id="dateVoulue">
+						<option>Partir après </option>
+						<option>Arrivée avant </option>
+					</select>
+					<input type="date" name="dateS" id="dateS" class="form-control"/>
+				</div>
+				<input type="submit" class="btn btn-info btn-block" value="Appliquer le filtre"/>
+			</form> 
+		</aside>
+		<section id="annonces" class="col-lg-8 offset-lg-1 col-sm-12">
+			<aside class="annonce row">
+				<div class="col-md-3 annonceur">
+					<div><img src="images/logo-bouygues-telecom.jpg" alt="Bouygues" class="rounded float-left logo" /></div>
+					<p class="h6">Bouygues Télécom</p>
+				</div>
+				<div class="col-md-8 memo">
+					<p class="h6">Container de 10 pieds</p>
+					<p>
+						Nous mettons à votre disposition un container de 10 pieds qui part de <strong>Paris, France</strong> le <em>09-05-2018</em> pour <strong>Libreville, Gabon</strong>. 
+						Arrivée prévue le <em>10-10-2018</em>.
+					</p>
+					<p>Pour plus d'information, contactez-nous!!!</p> <button class="btn btn-lg btn-danger">Contacter l'annonceur</button>
+				</div>
+			</aside>
+			<aside class="annonce row">
+				<div class="col-md-3 annonceur">
+					<div><img src="images/Vente-Logo-Entreprise.png" alt="Vente-Logo-Entreprise" class="rounded float-left logo" /></div>
+					<p class="h6">Vente Logo Entreprise</p>
+				</div>
+				<div class="col-md-8 memo">
+					<p class="h6">Container de 20 pieds</p>
+					<p>
+						Nous mettons à votre disposition un container de 20 pieds qui part de <strong>Pekin, Chine</strong> le <em>09-05-2018</em> pour <strong>Libreville, Gabon</strong>. 
+						Arrivée prévue le <em>10-10-2018</em>.
+					</p>
+					<p>Pour plus d'information, contactez-nous!!!</p> <button class="btn btn-lg btn-danger">Contacter l'annonceur</button>
+				</div>
+			</aside>
+				<aside class="annonce row">
+				<div class="col-md-3 annonceur">
+					<div><img src="images/user.png" alt="Jean-Jacques M." class="circle float-left user" /></div>
+					<p class="h6">Jean-Jacques M.</p>
+				</div>
+				<div class="col-md-8 memo">
+					<p class="h6">Container de 20 pieds</p>
+					<p>
+						Nous mettons à votre disposition un container de 20 pieds qui part de <strong>Pekin, Chine</strong> le <em>09-05-2018</em> pour <strong>Libreville, Gabon</strong>. 
+						Arrivée prévue le <em>10-10-2018</em>.
+					</p>
+					<p>Pour plus d'information, contactez-nous!!!</p> <button class="btn btn-lg btn-danger">Contacter l'annonceur</button>
+				</div>
+			</aside>
+		</section>
+	</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,219 @@
+body {
+
+  padding-top: 10px;
+  background: #ADD8E6 url("images/banniere.jpg") no-repeat top fixed;
+}
+
+
+
+.container {
+
+}
+
+#filtre .form-group {
+
+	margin-right: 15px;
+}
+
+
+/* header */
+#en-tete
+{
+	height: 200px;
+	margin-bottom: 5%;
+	padding: 20px;
+	background-color: #ADD8E6;
+	border-radius: 15px;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+#logo
+{
+	align-self: flex-start;
+}
+#logo img
+{
+	width: 400px;
+}
+
+#menu 
+{
+	align-self: flex-end;
+	margin-top: 6%;
+}
+#menu .active {
+	background-color: #F8F8FF;
+}
+
+
+
+#menu a {
+	font-family: Helvetica, Verdana, "Trebuchet MS",  "sans-serif"
+	font-size: 20px;
+	color: black;
+}
+
+
+.well 
+{
+	background-color: #ADD8E6;
+	padding: 20px;
+	border-radius: 15px;
+
+}
+
+/* Formulaire */
+#connexion_standars {
+	border: 1px solid black;
+	border-radius: 5px;
+	margin-left: 15%;
+	padding: 2%;
+	text-align: center;
+	background-color: #ADD8E6;
+	margin-bottom: 5%;
+	
+}
+
+#connexion_standars input
+{
+	margin-left: 25%;
+	margin-bottom: 10px;
+
+}
+
+.form-group
+{
+	padding-bottom: 5px;
+	padding-left: 10px
+
+}
+
+fieldset 
+{
+	margin: 20px;
+	padding: 20px;
+	border: 2px solid silver;
+	border-radius: 10px;
+	padding-left: 5%;
+}
+
+legend
+{
+	text-decoration: underline;
+	margin: 10px;
+	font-style: italic;
+}
+
+
+
+
+.button_radio {
+	
+	margin-left: 10px;
+	margin-bottom: 10px;
+}
+
+
+.bouton
+{
+	margin-left: 50px;
+	margin-top: 10px;
+}
+
+#company
+{
+	/*display: none;*/
+}
+
+label span 
+{
+	color: red;
+}
+
+input, select
+{
+	text-align: center;
+}
+
+p span 
+{
+  	text-align: center;
+  	font-style: italic;
+}
+
+.form-login
+{
+ 	text-align: center;
+}
+
+#autrePieds 
+{
+	display: none;
+}
+
+/* index */
+aside#filtre div, aside#filtre select
+{
+	margin-bottom: 6px;
+}
+
+#annonces
+{
+	border-left: 3px solid #F8F8FF;
+	padding-left: 30px;
+}
+
+.annonce
+{
+	border-bottom: 3px solid #F8F8FF;
+	padding-bottom: 20px;
+
+}
+
+.annonceur
+{
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+.annonceur img
+{
+	width: 150px;
+	height: 100px;
+	border: 1px solid black;
+
+}
+
+.annonceur img.user
+{
+	
+	
+}
+
+.h6, .h4
+{
+	text-align: center;
+	font-style: italic;
+
+}
+
+em
+{
+	font-style: italic;
+}
+
+.memo
+{
+	padding-top: 20px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.memo button 
+{
+	flex-content: flex-end;
+}

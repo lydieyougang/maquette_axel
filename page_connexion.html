@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Se connecter - PartageMonContainer</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<!-- Les scripts -->
+	<script type="text/javascript" src="jquery-3.3.1.js"></script>
+	<script defer src="fontawesome-free-5.0.13/svg-with-js/js/fontawesome-all.js"></script>
+</head>
+<body>
+	<!-- beginning of the page-->
+<div class="container">
+	<header class="row" id="en-tete">
+		<div class="col-sm-12">
+			<div id="logo">
+				<img src="images/mon_logo.png" alt="PartageMonContainer">
+			</div>
+			<ul class="nav nav-pills justify-content-end" id="menu">
+				<li class="nav-item"><a href="index.html" class="nav-link"><i class="fas fa-home fa-lg"></i></a></li>
+				<li class="nav-item"><a href="new_annonce.html" class="nav-link disabled">Déposer une annonce</a></li>
+				<li class="nav-item"><a href="#" class="nav-link">Voir les offres</a></li>
+				<li class="nav-item"><a href="page_connexion.html" class="nav-link active">Connexion</a></li>
+			</ul>
+		</div>
+	</header>
+<div class="col-sm-offset-4 col-sm-8" id="connexion_standars">
+	<div class="form-login">
+		<h4>YOU ARE WELCOM!</h4>
+		<input type="email" class="form-control col-sm-6" name="userEmail" id="userEmail" placeholder="votre login" required/>
+		<input type="password" class="form-control col-sm-6" name="userPassword" id="userPassword" placeholder="Mot de passe" required>
+		<button class="btn btn-success">Login <i class="fas fa-sign-in-alt"></i></button>
+		<p><small>Mot de passe oublié? <a href="#">Changez de mot de passe</a></small></p>
+		<p><small>Vous n'êtes pas en inscrit? <a href="inscription.html">Inscrivez-vous</a></small><p>
+	</div>
+</div>
+</body>
+</html>

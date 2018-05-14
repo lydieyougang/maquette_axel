@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>PartageMonContainer</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+<div class="container">
+		<header class="row" id="en-tete">
+		<div class="col-sm-12">
+			<div id="logo">
+				<h1>PartageMonContainer</h1>
+			</div>
+			<ul class="nav nav-pills justify-content-end" id="menu">
+				<li class="nav-item"><a href="#" class="nav-link active">Accueil</a></li>
+				<li class="nav-item"><a href="new_annonce.html" class="nav-link">Déposer une annonce</a></li>
+				<li class="nav-item"><a href="#" class="nav-link">Voir les offres</a></li>
+				<li class="nav-item"><a href="page_connexion.html" class="nav-link">Connexion</a></li>
+			</ul>
+		</div>
+	</header>
+	<div class="well row">
+	</div>
+</div>
+</body>
+</html>
